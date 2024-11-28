@@ -32,40 +32,40 @@ Joining data which has the level of granularity results in 3 major dataframes: A
 ## 3 Data Exploration & Vizualisation
 ### 3.1 National
 A comparison of all Eurostat national level features for a sub-selection of countries in a specified year. One can choose to show the absolute value of the features or a min-max-scaled version, where the maximum feature value over all countries is scaled to 1 and the minumun to 0.<br>
-<center><img src='assets/national_01.gif'></center>
+<p align='center' width='100%'><img src='assets/national_01.gif'></p>
 <br>
-To investigate the development of certain feature among a sub-set of countries one can compare their time series.
-<center><img src='assets/national_02.gif'></center>
+To investigate the development of certain feature among a sub-set of countries one can compare their time series.<br>
+<p align='center'><img src='assets/national_02.gif'></p>
 <br>
-Adding the geographical dimension we can run two features for each country against each other to get an idea about possible correlations.
-<center><img src='assets/national_03.gif'></center>
+Adding the geographical dimension we can run two features for each country against each other to get an idea about possible correlations.<br>
+<p align='center'><img src='assets/national_03.gif'></p>
 <br>
-Finally, a Choropleth map compares the magnitude of an arbitrary feature in a given year among all countries.
-<center><img src='assets/national_04.gif'></center>
+Finally, a Choropleth map compares the magnitude of an arbitrary feature in a given year among all countries.<br>
+<p align='center'><img src='assets/national_04.gif'></p>
 
 ### 3.2 Regional
 Regarding the regional granularity I inspect the levels NUTS 0-2<br>
-<center><img src='assets/regional_01.gif'></center>
+<p align='center'><img src='assets/regional_01.gif'></p>
 <br>
-A Choropleth map lets us break down an arbitrary feature (here: Features from the Gapminder Dataset(s)) to the desired regional level and year
-<center><img src='assets/regional_02.gif'></center>
+A Choropleth map lets us break down an arbitrary feature (here: Features from the Gapminder Dataset(s)) to the desired regional level and year<br>
+<p align='center'><img src='assets/regional_02.gif'></p>
 
 ### 3.3 Urban
 Urban data is organized in city kernels (see city center) and their peripheral entities.<br>
-<center><img src='assets/urban_01.gif'></center>
+<p align='center'><img src='assets/urban_01.gif'></p>
 <br>
-A Circle map lets us compare a feature among all cities in a specified year.
-<center><img src='assets/urban_02.gif'></center>
+A Circle map lets us compare a feature among all cities in a specified year.<br>
+<p align='center'><img src='assets/urban_02.gif'></p>
 <br>
 
 ## 4 Feature Engineering & Missing Data Handling
-Merging all available data and desired features on the same level of regional granularity (e.g. national level) results in two major dataframes `df_national` & `df_urban`.
-
-Comparing a national feature to its european median and mean including an optional 95% confidence interval.
-<center><img src='assets/features_national_01.gif'></center>
+Merging all available data and desired features on the same level of regional granularity (e.g. national level) results in two major dataframes `df_national` & `df_urban`.<br>
 <br>
-We can also compare each features distribution among all member states.
-<center><img src='assets/features_national_02.gif'></center>
+Comparing a national feature to its european median and mean including an optional 95% confidence interval.<br>
+<p align='center'><img src='assets/features_national_01.gif'></p>
+<br>
+We can also compare each features distribution among all member states.<br>
+<p align='center'><img src='assets/features_national_02.gif'></p>
 <br>
 Choosing the right imputation strategy for missing values is crucial. Different strategies are applied depending on properties of the individual features, e.g.:
 
@@ -75,45 +75,45 @@ Choosing the right imputation strategy for missing values is crucial. Different 
 - Forward/Backward fill
 - ...
 
-Finally, We can also inspect the results of the missing data imputation.
-<center><img src='assets/features_national_03.gif'></center>
+Finally, We can also inspect the results of the missing data imputation.<br>
+<p align='center'><img src='assets/features_national_03.gif'></p>
 
 ## 5 Correlation Analysis
 
-First, get an idea about possible correlations by visualising a scatterplot of pairwise features for each entity (e.g. member state).
-<center><img src='assets/correlation_national_04.png' width='60%'></center>
+First, get an idea about possible correlations by visualising a scatterplot of pairwise features for each entity (e.g. member state).<br>
+<p align='center'><img src='assets/correlation_national_04.png' width='60%'></p>
 <br>
 
-Additionally, we can inspect the correlation between all features.
-<center><img src='assets/correlation_national_01.png' width='60%'></center>
+Additionally, we can inspect the correlation between all features.<br>
+<p align='center'><img src='assets/correlation_national_01.png' width='60%'></p>
 <br>
-But we can also run two time series of features for every entity against each other and inspect a certain period if we want. This can reveal common/contrary trends.
-<center><img src='assets/correlation_national_02.gif'></center>
+But we can also run two time series of features for every entity against each other and inspect a certain period if we want. This can reveal common/contrary trends.<br>
+<p align='center'><img src='assets/correlation_national_02.gif'></p>
 <br>
 
-Furthermore, we can study the correlation coefficient of two features among all entities and see how this has changed over time, for eaxmaple, "how has the correlation between `Cars per Person` an `GDP Growth` changed over the time?"
-<center><img src='assets/correlation_national_03.gif'></center>
+Furthermore, we can study the correlation coefficient of two features among all entities and see how this has changed over time, for eaxmaple, "how has the correlation between `Cars per Person` an `GDP Growth` changed over the time?"<br>
+<p align='center'><img src='assets/correlation_national_03.gif'></p>
 <br>
 
 ## 6 Cluster Analysis
-In order to find clusters of states/cities that share the same properties regarding socio-economic values and traffic behavior I scale all features that display total numbers (e.g. `Total Number of Cars`) with the `Total Population`.
+In order to find clusters of states/cities that share the same properties regarding socio-economic values and traffic behavior I scale all features that display total numbers (e.g. `Total Number of Cars`) with the `Total Population`.<br>
 
 ### 6.1 National Cluster
-A radar chart of the K-Means(k=3) clustering of all memberstates reveals the (realtive) magnitude of each feature for the three classes.
-<center><img src='assets/cluster_national_01.png' width='60%'></center>
+A radar chart of the K-Means(k=3) clustering of all memberstates reveals the (realtive) magnitude of each feature for the three classes.<br>
+<p align='center'><img src='assets/cluster_national_01.png' width='60%'></p>
 <br>
-We can study the geographical dimension by colouring each country regarding its class.
-<center><img src='assets/cluster_national_02.gif'></center>
+We can study the geographical dimension by colouring each country regarding its class.<br>
+<p align='center'><img src='assets/cluster_national_02.gif'></p>
 
 ### 6.1 City Cluster
-A K-Means(k=4) clustering creates four classes with chare the following properties.
-<center><img src='assets/cluster_urban_03.png' width='60%'></center>
+A K-Means(k=4) clustering creates four classes with chare the following properties.<br>
+<p align='center'><img src='assets/cluster_urban_03.png' width='60%'></p>
 <br>
-Which results in a geographical representation as,
-<center><img src='assets/cluster_urban_04.png' width='60%'></center>
+Which results in a geographical representation as,<br>
+<p align='center'><img src='assets/cluster_urban_04.png' width='60%'></p>
 <br>
-Additionally, we can do a time series clustering that classifies cities that follw a similar trend regarding a specific feature.
-<center><img src='assets/cluster_urban_01.png' width='60%'></center>
+Additionally, we can do a time series clustering that classifies cities that follw a similar trend regarding a specific feature. <br>
+<p align='center'><img src='assets/cluster_urban_01.png' width='60%'></p>
 <br>
-Choosing the optimal number of clusters (k) based upon the silhouette score reveals following time series clustering for each feature individually.
-<center><img src='assets/cluster_urban_02.gif'></center>
+Choosing the optimal number of clusters (k) based upon the silhouette score reveals following time series clustering for each feature individually. <br>
+<center><img src='assets/cluster_urban_02.gif'></p>
