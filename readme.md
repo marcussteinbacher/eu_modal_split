@@ -7,6 +7,10 @@
     <div style='font-family:georgia serif'>by</div>
     <div style='font-family:georgia serif'>Marcus Steinbacher</div>
 </center>
+<br>
+<a target="_blank" href="https://colab.research.google.com/github/marcussteinbacher/eu_modal_split/blob/main/notebook_min.ipynb">
+<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 </header>
 
 <body>
