@@ -11,6 +11,7 @@ Marcus Steinbacher
 <br>
 
 **Abstract**
+
 This study investigates european national (NUTS 1-3) and urban traffic behaviour based on data from Eurostat, Unided Nations and Gapminder. I present several interactive applications to investigate the correlation between socio-economic metrics and traffic data on a temporal and local dimension. <br>
 The interactive analysis provides a healthy basis for the identification and extraction of relevant features features for a regional K-Means clustering of countries and cities. Furthermore, I conduct a Time-Series K-Means clustering of cities. <br>
 The hyperparameter-tuned models reveal three types of countries that share similar features as well as four kinds of cities. A urban temporal clustering application presents the optmial clusters (optimal hyperparameters) for each feature individually.
