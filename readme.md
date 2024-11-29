@@ -110,7 +110,7 @@ A K-Means(k=4) clustering creates four classes with chare the following properti
 <p align='center'><img src='assets/cluster_urban_03.png' width='60%'></p>
 <br>
 Which results in a geographical representation as,<br>
-<p align='center'><img src='assets/cluster_urban_04.png' width='60%'></p>
+<p align='center'><img src='assets/cluster_urban_04.gif' width='60%'></p>
 <br>
 Additionally, we can do a time series clustering that classifies cities that follw a similar trend regarding a specific feature. <br>
 <p align='center'><img src='assets/cluster_urban_01.png' width='60%'></p>
